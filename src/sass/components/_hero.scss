@@ -1,0 +1,12 @@
+.hero {
+	.container {
+		--vertical: 4rem;
+		padding-top: var(--vertical);
+		padding-bottom: var(--vertical);
+
+		div {
+			display: flex;
+			gap: 2rem;
+		}
+	}
+}

@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: links
+name: Links
+propagationMethod: all
+siteSettings:
+  700b7e8f-d346-4c21-aca8-6c9ee985cd77: # Coffee & Learn ☕️
+    enabledByDefault: true
+    hasUrls: true
+    template: links/_entry
+    uriFormat: links
+type: single

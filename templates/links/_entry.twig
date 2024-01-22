@@ -1,0 +1,22 @@
+{% extends "_/partials/common" %}
+
+{% block entryContent %}
+	<div class="hero">
+		<div class="container">
+			<div>
+				<button class="button primary-button">Play video</button>
+				{% if entry.primaryLink %}
+					{{ include("_/components/button", { button: entry.primaryLink, variant: 'primary' }) }}
+				{% endif %}
+				{% if entry.secondaryLink %}
+					{{ include("_/components/button", { button: entry.secondaryLink, variant: 'secondary' }) }}
+				{% endif %}
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		{% if entry.text is not empty %}
+			{{ include("_/components/text", { text: entry.text }) }}
+		{% endif %}
+	</div>
+{% endblock %}

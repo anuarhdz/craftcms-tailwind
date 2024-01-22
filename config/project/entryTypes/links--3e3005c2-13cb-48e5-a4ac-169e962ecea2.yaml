@@ -1,0 +1,83 @@
+fieldLayouts:
+  c9ad4681-0205-46e6-a68f-cb9359d70efa:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 3a171f0f-ede0-4414-882c-84e66f359a2d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b088ebda-1636-485f-89bb-eda874683188 # Primary Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 903abb95-f854-40cc-8c41-98365b14b6f2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7caccd11-b28b-4599-bc2f-279628cd03b7 # Secondary Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ad767abe-9086-4ea4-867e-c5ee76ae1896
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ee365096-5aa9-46fd-8551-9b673bf88186 # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 38ff3b37-518c-4df7-80d2-5349762cf2d7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: cdee3c3b-c606-4ecb-9b09-8471db0f2f68
+        userCondition: null
+handle: links
+hasTitleField: false
+name: Links
+section: 4b4a10d2-197c-42f9-9321-5cfad383b1fd # Links
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

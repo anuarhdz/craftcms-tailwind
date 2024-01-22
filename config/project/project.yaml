@@ -1,0 +1,65 @@
+dateModified: 1705694496
+email:
+  fromEmail: anuar@hey.com
+  fromName: Foundation
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  media:
+    hasUrls: true
+    name: Media
+    settings:
+      path: '@webroot/media'
+    type: craft\fs\Local
+    url: '@web/media'
+meta:
+  __names__:
+    3e3005c2-13cb-48e5-a4ac-169e962ecea2: Links # Links
+    4b4a10d2-197c-42f9-9321-5cfad383b1fd: Links # Links
+    7caccd11-b28b-4599-bc2f-279628cd03b7: 'Secondary Link' # Secondary Link
+    255a9455-5d5a-4424-a571-aa4bbd002412: Full # Full
+    700b7e8f-d346-4c21-aca8-6c9ee985cd77: 'Coffee & Learn ☕️' # Coffee & Learn ☕️
+    2507e5aa-62d0-4d14-8335-6e74e5041053: Foundation # Foundation
+    498798d1-e97a-4db6-bc4f-3228b8c51881: Common # Common
+    61564484-3eee-4e39-ac3c-c82713562490: Simple # Simple
+    acf8b0db-5f3a-4dfd-be93-415733620f18: Images # Images
+    b088ebda-1636-485f-89bb-eda874683188: 'Primary Link' # Primary Link
+    ee365096-5aa9-46fd-8551-9b673bf88186: Text # Text
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  neo:
+    edition: standard
+    enabled: true
+    licenseKey: PD4SJ3QA6MDEWXZD8GEJ8WC6
+    schemaVersion: 4.0.0
+  quick-field:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  seomatic:
+    edition: standard
+    enabled: true
+    licenseKey: RZBSYN5NJHHJFUIOJZER6E4M
+    schemaVersion: 3.0.12
+  typedlinkfield:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: Foundation
+  schemaVersion: 4.5.3.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

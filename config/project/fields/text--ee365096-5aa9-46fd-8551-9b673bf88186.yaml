@@ -1,0 +1,23 @@
+columnSuffix: onhmevss
+contentColumnType: text
+fieldGroup: 498798d1-e97a-4db6-bc4f-3228b8c51881 # Common
+handle: text
+instructions: null
+name: Text
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  ckeConfig: 255a9455-5d5a-4424-a571-aa4bbd002412 # Full
+  columnType: text
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

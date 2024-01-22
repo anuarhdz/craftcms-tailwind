@@ -1,0 +1,40 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+
+
+{% set env = getenv('CRAFT_ENVIRONMENT') %}
+{% set baseUrl = url() %}
+
+{% header "Link: <#{baseUrl}>; rel=dns-prefetch;,<#{baseUrl}>; rel=preconnect; crossorigin;" %}
+
+
+<!DOCTYPE html>
+<html lang="{{ craft.app.language }}" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" class="no-js">
+  <head>
+
+    <link rel="dns-prefetch" href="{{ baseUrl }}" crossorigin>
+    <link rel="preconnect" href="{{ baseUrl }}" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token-name" content="{{ craft.app.config.general.csrfTokenName }}">
+    <meta name="csrf-token" content="{{ craft.app.request.csrfToken() }}">
+
+    {% include "_/meta/favicon" %}
+    {{ craft.vite.script('src/js/app.js') }}
+    {% if env is not same as('dev') and env is not same as('staging')  %}
+      <noscript>
+        <link rel="stylesheet" href="{{ craft.vite.entry('app.css') }}">
+      </noscript>
+    {% endif %}
+
+  </head>
+
+  <body>
+    <div class="body-wrapper">
+      {% include "_/components/header" %}
+      {% block main %}{% endblock %}
+      {% include "_/components/footer" %}
+    </div>
+  </body>
+</html>

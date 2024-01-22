@@ -1,0 +1,20 @@
+headingLevels:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+js: "return {\r\n  link: {\r\n    decorators: {\r\n      openInNewTab: {\r\n        mode: 'manual',\r\n        label: 'Open in a new tab',\r\n        defaultValue: false,\r\n        attributes: {\r\n          target: '_blank',\r\n          rel: 'noopener noreferrer',\r\n        },\r\n      },\r\n    },\r\n  },\r\n}"
+listPlugin: List
+name: Full
+toolbar:
+  - heading
+  - underline
+  - bold
+  - italic
+  - bulletedList
+  - numberedList
+  - link
+  - insertImage
+  - sourceEditing

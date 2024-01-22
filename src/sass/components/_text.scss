@@ -1,0 +1,17 @@
+.prose {
+	max-width: 70ch;
+	--flow: 1em;
+
+	a:not([class]) {
+		color: inherit;
+	}
+
+	>*+* {
+		margin-top: var(--flow);
+	}
+
+	ul {
+		--flow: 2em;
+		margin-bottom: var(--flow);
+	}
+}

@@ -1,0 +1,17 @@
+{% set variants = {
+	base: 'inline-flex items-center px-4 py-2 border text-sm rounded-md font-medium ',
+	primary: 'bg-sky-500 text-white border-transparent hover:bg-sky-600',
+	secondary: 'bg-white text-gray-700 border-gray-300 hover:bg-gray-50',
+} %}
+
+{# {% set attributes = {
+	class: 'button ' ~ variant | default('primary') ~ '-button',
+} %} #}
+
+{% set attributes = {
+	class: variants.base ~ variants[variant]
+} %}
+
+{% if not button.isEmpty() %}
+	{{ button.getLink(attributes) }}
+{% endif %}
