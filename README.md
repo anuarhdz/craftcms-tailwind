@@ -10,7 +10,7 @@ After installing and configuring your Craft CMS instance, set the ./public_html 
 
 ```zsh
 ~/Sites/foundation main
-❯ cd public_html && valet link foundation
+❯ cd public && valet link foundation
 ```
 
 ## IMPORTANT
